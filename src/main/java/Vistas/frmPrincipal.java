@@ -37,7 +37,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\Logo_ITSON (1).png")); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 289, 91));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 260, 91));
 
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\mapa-itson (1).png")); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 109, -1, 377));
