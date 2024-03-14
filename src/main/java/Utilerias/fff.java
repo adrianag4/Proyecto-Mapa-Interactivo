@@ -6,7 +6,7 @@ package Utilerias;
 
 /**
  *
- * @author RAUL EDUARDO GOMEZ
+ * @author JOSUE GOMEZ
  */
 public class fff {
     
