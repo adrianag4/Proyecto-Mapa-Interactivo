@@ -4,6 +4,8 @@
  */
 package Vistas;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author RAUL EDUARDO GOMEZ
@@ -14,8 +16,9 @@ public class frmAjustes extends javax.swing.JFrame {
      * Creates new form Ajustes
      */
     public frmAjustes() {
-        btnAjustes.setLayout(null);
+
         initComponents();
+        transparenciaBoton();
     }
 
     /**
@@ -30,10 +33,11 @@ public class frmAjustes extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         btnAjustes = new javax.swing.JButton();
-        btnVerHorario = new javax.swing.JButton();
+        btnIniciarSesion = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        btnVerHorario1 = new javax.swing.JButton();
+        btnVerHorario = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jButton2.setText("jButton2");
 
@@ -43,36 +47,42 @@ public class frmAjustes extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnAjustes.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\bright-blue-sky-7283301_1280.png")); // NOI18N
+        btnAjustes.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulA.png")); // NOI18N
         btnAjustes.setBorder(null);
+        btnAjustes.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulAS.png")); // NOI18N
         btnAjustes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAjustesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, -1, -1));
+        jPanel1.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, -1, -1));
 
-        btnVerHorario.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\bright-blue-sky-7283301_1280.png")); // NOI18N
+        btnIniciarSesion.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulIS.png")); // NOI18N
+        btnIniciarSesion.setBorder(null);
+        btnIniciarSesion.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulISS.png")); // NOI18N
+        btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIniciarSesionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\Logo_ITSON (1).png")); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 260, 110));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 300, 10));
+
+        btnVerHorario.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulVerHorario.png")); // NOI18N
         btnVerHorario.setBorder(null);
+        btnVerHorario.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulVerHorarioS.png")); // NOI18N
         btnVerHorario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVerHorarioActionPerformed(evt);
             }
         });
-        jPanel1.add(btnVerHorario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, -1));
+        jPanel1.add(btnVerHorario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/Logo_ITSON (1).png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 260, 110));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 300, 10));
-
-        btnVerHorario1.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\bright-blue-sky-7283301_1280.png")); // NOI18N
-        btnVerHorario1.setBorder(null);
-        btnVerHorario1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVerHorario1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnVerHorario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\logoPotros.png")); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 300, 330));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -86,20 +96,33 @@ public class frmAjustes extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAjustesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjustesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAjustesActionPerformed
 
+    private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnIniciarSesionActionPerformed
+
     private void btnVerHorarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerHorarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVerHorarioActionPerformed
+public void transparenciaBoton(){ 
+     btnAjustes.setOpaque(false);
+btnAjustes.setContentAreaFilled(false);
+btnAjustes.setBorderPainted(false);
 
-    private void btnVerHorario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerHorario1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnVerHorario1ActionPerformed
+btnVerHorario.setOpaque(false);
+btnVerHorario.setContentAreaFilled(false);
+btnVerHorario.setBorderPainted(false);
 
+btnIniciarSesion.setOpaque(false);
+btnIniciarSesion.setContentAreaFilled(false);
+btnIniciarSesion.setBorderPainted(false);
+}
     /**
      * @param args the command line arguments
      */
@@ -138,9 +161,10 @@ public class frmAjustes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAjustes;
+    private javax.swing.JButton btnIniciarSesion;
     private javax.swing.JButton btnVerHorario;
-    private javax.swing.JButton btnVerHorario1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
