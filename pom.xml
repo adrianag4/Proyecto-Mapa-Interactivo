@@ -9,13 +9,17 @@
         <dependency>
             <groupId>org.netbeans.external</groupId>
             <artifactId>AbsoluteLayout</artifactId>
+<<<<<<< HEAD
+            <version>RELEASE180</version>
+=======
             <version>RELEASE140</version>
+>>>>>>> 66599bb7dcb7d4d1a62ef9bc6fd78839c7fcb649
         </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>7</maven.compiler.source>
-        <maven.compiler.target>7</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>com.mycompany.presentacion.Presentacion</exec.mainClass>
     </properties>
 </project>
