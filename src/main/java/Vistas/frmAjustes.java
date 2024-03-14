@@ -43,7 +43,6 @@ public class frmAjustes extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnAjustes.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\bright-blue-sky-7283301_1280.png")); // NOI18N
         btnAjustes.setBorder(null);
         btnAjustes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,7 +51,6 @@ public class frmAjustes extends javax.swing.JFrame {
         });
         jPanel1.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, -1, -1));
 
-        btnVerHorario.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\bright-blue-sky-7283301_1280.png")); // NOI18N
         btnVerHorario.setBorder(null);
         btnVerHorario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,7 +63,6 @@ public class frmAjustes extends javax.swing.JFrame {
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 260, 110));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 300, 10));
 
-        btnVerHorario1.setIcon(new javax.swing.ImageIcon("C:\\Users\\RAUL EDUARDO GOMEZ\\Documents\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\bright-blue-sky-7283301_1280.png")); // NOI18N
         btnVerHorario1.setBorder(null);
         btnVerHorario1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

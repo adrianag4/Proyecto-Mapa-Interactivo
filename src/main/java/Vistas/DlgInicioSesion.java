@@ -30,10 +30,10 @@ public class DlgInicioSesion extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        ButtonAjustes = new javax.swing.JButton();
-        ButtonIniciarSesion = new javax.swing.JButton();
-        ButtonVerHorario = new javax.swing.JButton();
+        txtContrasena = new javax.swing.JTextField();
+        txtUsuario = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         jLabel2.setText("jLabel2");
@@ -43,41 +43,20 @@ public class DlgInicioSesion extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(txtContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, 170, 30));
+        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 170, 30));
 
-        ButtonAjustes.setBackground(new java.awt.Color(60, 135, 196));
-        ButtonAjustes.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        ButtonAjustes.setText("Ajustes");
-        ButtonAjustes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonAjustesActionPerformed(evt);
-            }
-        });
-        jPanel1.add(ButtonAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 160, 40));
+        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel4.setText("Contraseña");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 80, -1));
 
-        ButtonIniciarSesion.setBackground(new java.awt.Color(60, 135, 196));
-        ButtonIniciarSesion.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        ButtonIniciarSesion.setText("Iniciar Sesión");
-        ButtonIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonIniciarSesionActionPerformed(evt);
-            }
-        });
-        jPanel1.add(ButtonIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 160, 40));
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel5.setText("Usuario");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 60, -1));
 
-        ButtonVerHorario.setBackground(new java.awt.Color(60, 135, 196));
-        ButtonVerHorario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        ButtonVerHorario.setText("Ver Horario");
-        ButtonVerHorario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonVerHorarioActionPerformed(evt);
-            }
-        });
-        jPanel1.add(ButtonVerHorario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 160, 40));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\Logo_ITSON (1).png")); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 260, 100));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\logoPotros.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\logoPotrosInicio.png")); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(500, 300));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 518));
 
@@ -94,18 +73,6 @@ public class DlgInicioSesion extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void ButtonAjustesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAjustesActionPerformed
-       
-    }//GEN-LAST:event_ButtonAjustesActionPerformed
-
-    private void ButtonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonIniciarSesionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonIniciarSesionActionPerformed
-
-    private void ButtonVerHorarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonVerHorarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ButtonVerHorarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,13 +118,13 @@ public class DlgInicioSesion extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonAjustes;
-    private javax.swing.JButton ButtonIniciarSesion;
-    private javax.swing.JButton ButtonVerHorario;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField txtContrasena;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }

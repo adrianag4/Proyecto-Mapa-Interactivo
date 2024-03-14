@@ -56,9 +56,6 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnAjustes">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\RAUL EDUARDO GOMEZ\Documents\NetBeansProjects\Proyecto-Mapa-Interactivo\src\main\java\Utilerias\bright-blue-sky-7283301_1280.png"/>
-            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
@@ -74,9 +71,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnVerHorario">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\RAUL EDUARDO GOMEZ\Documents\NetBeansProjects\Proyecto-Mapa-Interactivo\src\main\java\Utilerias\bright-blue-sky-7283301_1280.png"/>
-            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
@@ -111,9 +105,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnVerHorario1">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\RAUL EDUARDO GOMEZ\Documents\NetBeansProjects\Proyecto-Mapa-Interactivo\src\main\java\Utilerias\bright-blue-sky-7283301_1280.png"/>
-            </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
             </Property>
