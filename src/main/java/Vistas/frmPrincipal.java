@@ -27,8 +27,13 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        Boton_Ajustes = new javax.swing.JButton();
+        Boton_TusSalones = new javax.swing.JButton();
+        Boton_PuntosDeInteres = new javax.swing.JButton();
+        Label_LogoITSON = new javax.swing.JLabel();
+        Label_Mapa = new javax.swing.JLabel();
+        Label_TextoBusqueda = new javax.swing.JLabel();
+        CuadroBusqueda = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -36,17 +41,47 @@ public class frmPrincipal extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\Logo_ITSON (1).png")); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 289, 91));
+        Boton_Ajustes.setBackground(new java.awt.Color(255, 255, 255));
+        Boton_Ajustes.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        Boton_Ajustes.setForeground(new java.awt.Color(0, 0, 0));
+        Boton_Ajustes.setText("---");
+        jPanel1.add(Boton_Ajustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\mapa-itson (1).png")); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 109, -1, 377));
+        Boton_TusSalones.setBackground(new java.awt.Color(255, 255, 255));
+        Boton_TusSalones.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        Boton_TusSalones.setForeground(new java.awt.Color(25, 111, 196));
+        Boton_TusSalones.setText("Tus salones");
+        jPanel1.add(Boton_TusSalones, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 120, -1));
+
+        Boton_PuntosDeInteres.setBackground(new java.awt.Color(255, 255, 255));
+        Boton_PuntosDeInteres.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        Boton_PuntosDeInteres.setForeground(new java.awt.Color(25, 111, 196));
+        Boton_PuntosDeInteres.setText("Puntos De Interes");
+        jPanel1.add(Boton_PuntosDeInteres, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 120, -1));
+
+        Label_LogoITSON.setIcon(new javax.swing.ImageIcon("C:\\Users\\favel\\OneDrive\\Documentos\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\Logo_ITSON (1).png")); // NOI18N
+        jPanel1.add(Label_LogoITSON, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 240, 80));
+
+        Label_Mapa.setIcon(new javax.swing.ImageIcon("C:\\Users\\favel\\OneDrive\\Documentos\\NetBeansProjects\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\mapa-itson (1).png")); // NOI18N
+        jPanel1.add(Label_Mapa, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 280, 330));
+
+        Label_TextoBusqueda.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        Label_TextoBusqueda.setText("Búsqueda:");
+        jPanel1.add(Label_TextoBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, 40));
+
+        CuadroBusqueda.setBackground(new java.awt.Color(255, 255, 255));
+        CuadroBusqueda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CuadroBusquedaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(CuadroBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 190, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -55,6 +90,10 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void CuadroBusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CuadroBusquedaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CuadroBusquedaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -93,8 +132,13 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton Boton_Ajustes;
+    private javax.swing.JButton Boton_PuntosDeInteres;
+    private javax.swing.JButton Boton_TusSalones;
+    private javax.swing.JTextField CuadroBusqueda;
+    private javax.swing.JLabel Label_LogoITSON;
+    private javax.swing.JLabel Label_Mapa;
+    private javax.swing.JLabel Label_TextoBusqueda;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
