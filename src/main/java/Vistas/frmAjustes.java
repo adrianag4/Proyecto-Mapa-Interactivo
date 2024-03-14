@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package Vistas;
 
 import javax.swing.JButton;
@@ -18,7 +14,6 @@ public class frmAjustes extends javax.swing.JFrame {
     public frmAjustes() {
 
         initComponents();
-        transparenciaBoton();
     }
 
     /**
@@ -32,6 +27,7 @@ public class frmAjustes extends javax.swing.JFrame {
 
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        ButtonRegreso = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         btnIniciarSesion = new javax.swing.JButton();
@@ -47,14 +43,24 @@ public class frmAjustes extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        ButtonRegreso.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        ButtonRegreso.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonRegreso.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\icon-back.png")); // NOI18N
+        ButtonRegreso.setBorder(null);
+        ButtonRegreso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonRegresoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ButtonRegreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 40));
+
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\Logo_ITSON (1).png")); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 260, 110));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 260, 110));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 300, 10));
 
         btnIniciarSesion.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnIniciarSesion.setForeground(new java.awt.Color(255, 255, 255));
         btnIniciarSesion.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulIS.png")); // NOI18N
-        btnIniciarSesion.setText("INICIAR SESION");
         btnIniciarSesion.setBorder(null);
         btnIniciarSesion.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulISS.png")); // NOI18N
         btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -62,12 +68,11 @@ public class frmAjustes extends javax.swing.JFrame {
                 btnIniciarSesionActionPerformed(evt);
             }
         });
-        jPanel1.add(btnIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 180, 70));
+        jPanel1.add(btnIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 150, 70));
 
         btnAjustes.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnAjustes.setForeground(new java.awt.Color(255, 255, 255));
         btnAjustes.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulA.png")); // NOI18N
-        btnAjustes.setText("AJUSTES");
         btnAjustes.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAjustes.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulAS.png")); // NOI18N
         btnAjustes.addActionListener(new java.awt.event.ActionListener() {
@@ -75,12 +80,11 @@ public class frmAjustes extends javax.swing.JFrame {
                 btnAjustesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, 170, 60));
+        jPanel1.add(btnAjustes, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, 150, 60));
 
         btnVerHorario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnVerHorario.setForeground(new java.awt.Color(255, 255, 255));
         btnVerHorario.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulVerHorario.png")); // NOI18N
-        btnVerHorario.setText("VER HORARIO");
         btnVerHorario.setBorder(null);
         btnVerHorario.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\rectanguloAzulVerHorarioS.png")); // NOI18N
         btnVerHorario.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +92,7 @@ public class frmAjustes extends javax.swing.JFrame {
                 btnVerHorarioActionPerformed(evt);
             }
         });
-        jPanel1.add(btnVerHorario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 180, 60));
+        jPanel1.add(btnVerHorario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 150, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\logoPotros.png")); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 300, 470));
@@ -110,6 +114,9 @@ public class frmAjustes extends javax.swing.JFrame {
 
     private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
         // TODO add your handling code here:
+        DlgInicioSesion inicioSesion = new DlgInicioSesion();
+        inicioSesion.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnIniciarSesionActionPerformed
 
     private void btnAjustesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjustesActionPerformed
@@ -119,6 +126,14 @@ public class frmAjustes extends javax.swing.JFrame {
     private void btnVerHorarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerHorarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVerHorarioActionPerformed
+
+    private void ButtonRegresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonRegresoActionPerformed
+        // TODO add your handling code here:
+        frmPrincipal principal = new frmPrincipal();
+        principal.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_ButtonRegresoActionPerformed
     public void transparenciaBoton() {
         btnAjustes.setOpaque(false);
         btnAjustes.setContentAreaFilled(false);
@@ -170,6 +185,7 @@ public class frmAjustes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ButtonRegreso;
     private javax.swing.JButton btnAjustes;
     private javax.swing.JButton btnIniciarSesion;
     private javax.swing.JButton btnVerHorario;
