@@ -14,7 +14,6 @@ public class frmAjustes extends javax.swing.JFrame {
      * Creates new form Ajustes
      */
     public frmAjustes() {
-        btnAjustes.setLayout(null);
         initComponents();
     }
 
@@ -59,7 +58,7 @@ public class frmAjustes extends javax.swing.JFrame {
         });
         jPanel1.add(btnVerHorario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Vistas/Logo_ITSON (1).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\molin\\OneDrive\\Documentos\\Mapa Interactivo\\Proyecto-Mapa-Interactivo\\src\\main\\java\\Utilerias\\Logo_ITSON (1).png")); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 260, 110));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 300, 10));
 
